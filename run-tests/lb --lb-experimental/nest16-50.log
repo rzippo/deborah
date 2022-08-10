@@ -1,0 +1,147 @@
+Parsing scenario configuration file... ok.
+------------------------------------------------------------
+Tandem: 16 nodes, 17 flows, nesting_level=2
+        Tagged flow = (1,16)  flow_id=#0
+        Tandem is nested.
+NODE 01: latency=1.00, rate=16.00
+NODE 02: latency=1.00, rate=16.00
+NODE 03: latency=1.00, rate=16.00
+NODE 04: latency=1.00, rate=16.00
+NODE 05: latency=1.00, rate=16.00
+NODE 06: latency=1.00, rate=16.00
+NODE 07: latency=1.00, rate=16.00
+NODE 08: latency=1.00, rate=16.00
+NODE 09: latency=1.00, rate=16.00
+NODE 10: latency=1.00, rate=16.00
+NODE 11: latency=1.00, rate=16.00
+NODE 12: latency=1.00, rate=16.00
+NODE 13: latency=1.00, rate=16.00
+NODE 14: latency=1.00, rate=16.00
+NODE 15: latency=1.00, rate=16.00
+NODE 16: latency=1.00, rate=16.00
+FLOW 00 (1,16): burst=5.00, rate=4.00; nesting_level=1; uid=0
+FLOW 01 (1,1): burst=5.00, rate=4.00; nesting_level=2; uid=1
+FLOW 02 (2,2): burst=5.00, rate=4.00; nesting_level=2; uid=2
+FLOW 03 (3,3): burst=5.00, rate=4.00; nesting_level=2; uid=3
+FLOW 04 (4,4): burst=5.00, rate=4.00; nesting_level=2; uid=4
+FLOW 05 (5,5): burst=5.00, rate=4.00; nesting_level=2; uid=5
+FLOW 06 (6,6): burst=5.00, rate=4.00; nesting_level=2; uid=6
+FLOW 07 (7,7): burst=5.00, rate=4.00; nesting_level=2; uid=7
+FLOW 08 (8,8): burst=5.00, rate=4.00; nesting_level=2; uid=8
+FLOW 09 (9,9): burst=5.00, rate=4.00; nesting_level=2; uid=9
+FLOW 10 (10,10): burst=5.00, rate=4.00; nesting_level=2; uid=a
+FLOW 11 (11,11): burst=5.00, rate=4.00; nesting_level=2; uid=b
+FLOW 12 (12,12): burst=5.00, rate=4.00; nesting_level=2; uid=c
+FLOW 13 (13,13): burst=5.00, rate=4.00; nesting_level=2; uid=d
+FLOW 14 (14,14): burst=5.00, rate=4.00; nesting_level=2; uid=e
+FLOW 15 (15,15): burst=5.00, rate=4.00; nesting_level=2; uid=f
+FLOW 16 (16,16): burst=5.00, rate=4.00; nesting_level=2; uid=10
+------------------------------------------------------------
+
+Associated nesting tree:
+----------------------------------------------------
+TNode: flow (1,16)   flow_id=#00
+       leaf nodes: none
+       child flows: (1,1) (2,2) (3,3) (4,4) (5,5) (6,6) (7,7) (8,8) (9,9) (10,10) (11,11) (12,12) (13,13) (14,14) (15,15) (16,16)
+       PI_C: none
+       Indexes: [ [ 17 ] [ 1 ] [ 1 ] [ 1 ] [ 1 ] [ 1 ] [ 1 ] [ 1 ] [ 1 ] [ 1 ] [ 1 ] [ 1 ] [ 1 ] [ 1 ] [ 1 ] [ 1 ] [ 1 ] ] --> combinations = 17
+TNode: flow (1,1)   flow_id=#01
+       leaf nodes: 01
+       child flows: none
+       PI_C: latency=1.00 rate=16.00
+       Indexes: [ [ 1 ] ] --> combinations = 1
+TNode: flow (2,2)   flow_id=#02
+       leaf nodes: 02
+       child flows: none
+       PI_C: latency=1.00 rate=16.00
+       Indexes: [ [ 1 ] ] --> combinations = 1
+TNode: flow (3,3)   flow_id=#03
+       leaf nodes: 03
+       child flows: none
+       PI_C: latency=1.00 rate=16.00
+       Indexes: [ [ 1 ] ] --> combinations = 1
+TNode: flow (4,4)   flow_id=#04
+       leaf nodes: 04
+       child flows: none
+       PI_C: latency=1.00 rate=16.00
+       Indexes: [ [ 1 ] ] --> combinations = 1
+TNode: flow (5,5)   flow_id=#05
+       leaf nodes: 05
+       child flows: none
+       PI_C: latency=1.00 rate=16.00
+       Indexes: [ [ 1 ] ] --> combinations = 1
+TNode: flow (6,6)   flow_id=#06
+       leaf nodes: 06
+       child flows: none
+       PI_C: latency=1.00 rate=16.00
+       Indexes: [ [ 1 ] ] --> combinations = 1
+TNode: flow (7,7)   flow_id=#07
+       leaf nodes: 07
+       child flows: none
+       PI_C: latency=1.00 rate=16.00
+       Indexes: [ [ 1 ] ] --> combinations = 1
+TNode: flow (8,8)   flow_id=#08
+       leaf nodes: 08
+       child flows: none
+       PI_C: latency=1.00 rate=16.00
+       Indexes: [ [ 1 ] ] --> combinations = 1
+TNode: flow (9,9)   flow_id=#09
+       leaf nodes: 09
+       child flows: none
+       PI_C: latency=1.00 rate=16.00
+       Indexes: [ [ 1 ] ] --> combinations = 1
+TNode: flow (10,10)   flow_id=#10
+       leaf nodes: 10
+       child flows: none
+       PI_C: latency=1.00 rate=16.00
+       Indexes: [ [ 1 ] ] --> combinations = 1
+TNode: flow (11,11)   flow_id=#11
+       leaf nodes: 11
+       child flows: none
+       PI_C: latency=1.00 rate=16.00
+       Indexes: [ [ 1 ] ] --> combinations = 1
+TNode: flow (12,12)   flow_id=#12
+       leaf nodes: 12
+       child flows: none
+       PI_C: latency=1.00 rate=16.00
+       Indexes: [ [ 1 ] ] --> combinations = 1
+TNode: flow (13,13)   flow_id=#13
+       leaf nodes: 13
+       child flows: none
+       PI_C: latency=1.00 rate=16.00
+       Indexes: [ [ 1 ] ] --> combinations = 1
+TNode: flow (14,14)   flow_id=#14
+       leaf nodes: 14
+       child flows: none
+       PI_C: latency=1.00 rate=16.00
+       Indexes: [ [ 1 ] ] --> combinations = 1
+TNode: flow (15,15)   flow_id=#15
+       leaf nodes: 15
+       child flows: none
+       PI_C: latency=1.00 rate=16.00
+       Indexes: [ [ 1 ] ] --> combinations = 1
+TNode: flow (16,16)   flow_id=#16
+       leaf nodes: 16
+       child flows: none
+       PI_C: latency=1.00 rate=16.00
+       Indexes: [ [ 1 ] ] --> combinations = 1
+----------------------------------------------------
+
+Tandem::LowerBound() algorithm started.
+
+----------------------------------------------------
+Number of combinations: 131072  (2 ^ 17)
+These flows transmit only the burst and will be considered greedy only:  00 01 
+Random combinations percentage: 100.000 %
+Effective number of combinations that will be computed: 32768
+#00000000: new LowerBound = 21.104167
+Lower Delay Bound = 21.104167 obtained with the following combinations:
+  000: #00000000 = 00000000000000000
+  001: #00065536 = 00000000000000001
+Effective combinations computed: 32768
+
+
+DEBORAH results:
+-------------------------
+LowerBound = 21.104167
+

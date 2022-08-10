@@ -1,0 +1,53 @@
+Parsing scenario configuration file... ok.
+------------------------------------------------------------
+Tandem: 5 nodes, 5 flows, nesting_level=5
+        Tagged flow = (1,5)  flow_id=#0
+        Tandem is nested.
+NODE 01: latency=10.00, rate=100.00
+NODE 02: latency=10.00, rate=200.00
+NODE 03: latency=10.00, rate=300.00
+NODE 04: latency=10.00, rate=400.00
+NODE 05: latency=10.00, rate=500.00
+FLOW 00 (1,5): burst=20.00, rate=10.00; nesting_level=1; uid=0
+FLOW 01 (2,5): burst=20.00, rate=15.00; nesting_level=2; uid=1
+FLOW 02 (3,5): burst=20.00, rate=30.00; nesting_level=3; uid=2
+FLOW 03 (4,5): burst=20.00, rate=35.00; nesting_level=4; uid=3
+FLOW 04 (5,5): burst=20.00, rate=40.00; nesting_level=5; uid=4
+------------------------------------------------------------
+
+Associated nesting tree:
+----------------------------------------------------
+TNode: flow (1,5)   flow_id=#00
+       leaf nodes: 01
+       child flows: (2,5)
+       PI_C: latency=10.00 rate=100.00
+       Indexes: [ [ 5 ] [ 4 3 2 1 ] ] --> combinations = 120
+TNode: flow (2,5)   flow_id=#01
+       leaf nodes: 02
+       child flows: (3,5)
+       PI_C: latency=10.00 rate=200.00
+       Indexes: [ [ 4 ] [ 3 2 1 ] ] --> combinations = 24
+TNode: flow (3,5)   flow_id=#02
+       leaf nodes: 03
+       child flows: (4,5)
+       PI_C: latency=10.00 rate=300.00
+       Indexes: [ [ 3 ] [ 2 1 ] ] --> combinations = 6
+TNode: flow (4,5)   flow_id=#03
+       leaf nodes: 04
+       child flows: (5,5)
+       PI_C: latency=10.00 rate=400.00
+       Indexes: [ [ 2 ] [ 1 ] ] --> combinations = 2
+TNode: flow (5,5)   flow_id=#04
+       leaf nodes: 05
+       child flows: none
+       PI_C: latency=10.00 rate=500.00
+       Indexes: [ [ 1 ] ] --> combinations = 1
+----------------------------------------------------
+This is a sink-tree.
+
+Output arrival curve parameters: 
+[
+	{ "burst" : 522.566667 , "rate" : 10.000000 }
+]
+
+

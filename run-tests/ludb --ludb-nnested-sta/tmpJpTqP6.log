@@ -1,0 +1,50 @@
+Parsing scenario configuration file... ok.
+------------------------------------------------------------
+Tandem: 6 nodes, 3 flows, nesting_level=2
+        Tagged flow = (1,6)  flow_id=#0
+        Tandem is nested.
+NODE 01: latency=3.00, rate=2.08
+NODE 02: latency=3.00, rate=2.08
+NODE 03: latency=4.00, rate=2.08
+NODE 04: latency=3.00, rate=4.17
+NODE 05: latency=4.00, rate=8.33
+NODE 06: latency=3.00, rate=16.67
+FLOW 00 (1,6): burst=30.00, rate=0.14; nesting_level=1; uid=0
+FLOW 01 (4,4): burst=33.06, rate=0.14; nesting_level=2; uid=1
+FLOW 02 (6,6): burst=32.57, rate=0.14; nesting_level=2; uid=2
+------------------------------------------------------------
+
+Associated nesting tree:
+----------------------------------------------------
+TNode: flow (1,6)   flow_id=#00
+       leaf nodes: 01 02 03 05
+       child flows: (4,4) (6,6)
+       PI_C: latency=14.00 rate=2.08
+       Indexes: [ [ 3 ] [ 1 ] [ 1 ] ] --> combinations = 3
+TNode: flow (4,4)   flow_id=#01
+       leaf nodes: 04
+       child flows: none
+       PI_C: latency=3.00 rate=4.17
+       Indexes: [ [ 1 ] ] --> combinations = 1
+TNode: flow (6,6)   flow_id=#02
+       leaf nodes: 06
+       child flows: none
+       PI_C: latency=3.00 rate=16.67
+       Indexes: [ [ 1 ] ] --> combinations = 1
+----------------------------------------------------
+
+Exact LUDB algorithm started:
+
+----------------------------------------------------
+LUDB = 44.288600
+Simplexes computed: 5
+Delay bound expression: 0.00*X0 + 1.00*X1 + 1.00*X2 + 44.29
+Solution:
+S(4,4) = 0.000000
+S(6,6) = 0.000000
+
+
+DEBORAH results:
+-------------------------
+      LUDB = 44.288600
+

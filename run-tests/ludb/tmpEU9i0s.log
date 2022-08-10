@@ -1,0 +1,57 @@
+Parsing scenario configuration file... ok.
+------------------------------------------------------------
+Tandem: 6 nodes, 4 flows, nesting_level=4
+        Tagged flow = (1,6)  flow_id=#0
+        Tandem is nested.
+NODE 01: latency=30.00, rate=0.21
+NODE 02: latency=31.00, rate=0.21
+NODE 03: latency=31.00, rate=0.42
+NODE 04: latency=30.00, rate=0.83
+NODE 05: latency=31.00, rate=0.83
+NODE 06: latency=30.00, rate=120.00
+FLOW 00 (1,6): burst=30.00, rate=0.14; nesting_level=1; uid=0
+FLOW 01 (3,6): burst=55.00, rate=0.14; nesting_level=2; uid=1
+FLOW 02 (4,6): burst=54.29, rate=0.14; nesting_level=3; uid=2
+FLOW 03 (6,6): burst=49.29, rate=0.14; nesting_level=4; uid=3
+------------------------------------------------------------
+
+Associated nesting tree:
+----------------------------------------------------
+TNode: flow (1,6)   flow_id=#00
+       leaf nodes: 01 02
+       child flows: (3,6)
+       PI_C: latency=61.00 rate=0.21
+       Indexes: [ [ 4 ] [ 3 2 1 ] ] --> combinations = 24
+TNode: flow (3,6)   flow_id=#01
+       leaf nodes: 03
+       child flows: (4,6)
+       PI_C: latency=31.00 rate=0.42
+       Indexes: [ [ 3 ] [ 2 1 ] ] --> combinations = 6
+TNode: flow (4,6)   flow_id=#02
+       leaf nodes: 04 05
+       child flows: (6,6)
+       PI_C: latency=61.00 rate=0.83
+       Indexes: [ [ 2 ] [ 1 ] ] --> combinations = 2
+TNode: flow (6,6)   flow_id=#03
+       leaf nodes: 06
+       child flows: none
+       PI_C: latency=30.00 rate=120.00
+       Indexes: [ [ 1 ] ] --> combinations = 1
+----------------------------------------------------
+
+Exact LUDB algorithm started:
+
+----------------------------------------------------
+LUDB = 524.558750
+Simplexes computed: 10
+Delay bound expression: 0.00*X0 + 1.00*X1 + 1.00*X2 + 1.00*X3 + 524.56
+Solution:
+S(3,6) = 0.000000
+S(4,6) = 0.000000
+S(6,6) = 0.000000
+
+
+DEBORAH results:
+-------------------------
+      LUDB = 524.558750
+

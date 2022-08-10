@@ -1,0 +1,38 @@
+Parsing scenario configuration file... ok.
+------------------------------------------------------------
+Tandem: 6 nodes, 7 flows, nesting_level=3
+        Tagged flow = (1,6)  flow_id=#0
+        Tandem is not nested.
+NODE 01: latency=1.00, rate=32.00
+NODE 02: latency=1.00, rate=32.00
+NODE 03: latency=1.00, rate=32.00
+NODE 04: latency=1.00, rate=32.00
+NODE 05: latency=1.00, rate=32.00
+NODE 06: latency=1.00, rate=32.00
+FLOW 00 (1,6): burst=5.00, rate=4.00; nesting_level=1; uid=0
+FLOW 01 (1,1): burst=5.00, rate=4.00; nesting_level=3; uid=1
+FLOW 02 (1,2): burst=5.00, rate=4.00; nesting_level=2; uid=2
+FLOW 03 (2,5): burst=5.00, rate=4.00; nesting_level=2; uid=3
+FLOW 04 (3,4): burst=5.00, rate=4.00; nesting_level=3; uid=4
+FLOW 05 (4,5): burst=5.00, rate=4.00; nesting_level=3; uid=5
+FLOW 06 (6,6): burst=5.00, rate=4.00; nesting_level=2; uid=6
+------------------------------------------------------------
+
+Tandem::LowerBound() algorithm started.
+
+----------------------------------------------------
+Number of combinations: 128  (2 ^ 7)
+These flows transmit only the burst and will be considered greedy only:  00 01 02 
+Random combinations percentage: 100.000 %
+Effective number of combinations that will be computed: 16
+#00000000: new LowerBound = 6.870094
+#00000064: new LowerBound = 6.908508
+Lower Delay Bound = 6.908508 obtained with the following combinations:
+  000: #00000064 = 0000001
+Effective combinations computed: 16
+
+
+DEBORAH results:
+-------------------------
+LowerBound = 6.908508
+

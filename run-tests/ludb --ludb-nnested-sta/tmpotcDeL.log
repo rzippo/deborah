@@ -1,0 +1,32 @@
+Parsing scenario configuration file... ok.
+------------------------------------------------------------
+Tandem: 2 nodes, 1 flows, nesting_level=1
+        Tagged flow = (1,2)  flow_id=#0
+        Tandem is nested.
+NODE 01: latency=4.00, rate=0.44
+NODE 02: latency=36.00, rate=1.33
+FLOW 00 (1,2): burst=2.00, rate=0.05; nesting_level=1; uid=0
+------------------------------------------------------------
+
+Associated nesting tree:
+----------------------------------------------------
+TNode: flow (1,2)   flow_id=#00
+       leaf nodes: 01 02
+       child flows: none
+       PI_C: latency=40.00 rate=0.44
+       Indexes: [ [ 1 ] ] --> combinations = 1
+----------------------------------------------------
+
+Exact LUDB algorithm started:
+
+----------------------------------------------------
+LUDB = 44.500000
+Simplexes computed: 1
+Delay bound expression: 0.00*X0 + 44.50
+Solution:
+
+
+DEBORAH results:
+-------------------------
+      LUDB = 44.500000
+

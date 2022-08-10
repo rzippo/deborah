@@ -1,0 +1,116 @@
+Parsing scenario configuration file... ok.
+------------------------------------------------------------
+Tandem: 16 nodes, 18 flows, nesting_level=3
+        Tagged flow = (1,16)  flow_id=#0
+        Tandem is not nested.
+NODE 01: latency=1.00, rate=24.00
+NODE 02: latency=1.00, rate=24.00
+NODE 03: latency=1.00, rate=24.00
+NODE 04: latency=1.00, rate=24.00
+NODE 05: latency=1.00, rate=24.00
+NODE 06: latency=1.00, rate=24.00
+NODE 07: latency=1.00, rate=24.00
+NODE 08: latency=1.00, rate=24.00
+NODE 09: latency=1.00, rate=24.00
+NODE 10: latency=1.00, rate=24.00
+NODE 11: latency=1.00, rate=24.00
+NODE 12: latency=1.00, rate=24.00
+NODE 13: latency=1.00, rate=24.00
+NODE 14: latency=1.00, rate=24.00
+NODE 15: latency=1.00, rate=24.00
+NODE 16: latency=1.00, rate=24.00
+FLOW 00 (1,16): burst=5.00, rate=4.00; nesting_level=1; uid=0
+FLOW 01 (1,1): burst=5.00, rate=4.00; nesting_level=3; uid=1
+FLOW 02 (2,3): burst=5.00, rate=4.00; nesting_level=2; uid=2
+FLOW 03 (4,5): burst=5.00, rate=4.00; nesting_level=2; uid=3
+FLOW 04 (6,7): burst=5.00, rate=4.00; nesting_level=2; uid=4
+FLOW 05 (8,9): burst=5.00, rate=4.00; nesting_level=2; uid=5
+FLOW 06 (10,11): burst=5.00, rate=4.00; nesting_level=2; uid=6
+FLOW 07 (12,13): burst=5.00, rate=4.00; nesting_level=2; uid=7
+FLOW 08 (14,15): burst=5.00, rate=4.00; nesting_level=2; uid=8
+FLOW 09 (16,16): burst=5.00, rate=4.00; nesting_level=3; uid=9
+FLOW 10 (1,2): burst=5.00, rate=4.00; nesting_level=2; uid=a
+FLOW 11 (3,4): burst=5.00, rate=4.00; nesting_level=2; uid=b
+FLOW 12 (5,6): burst=5.00, rate=4.00; nesting_level=2; uid=c
+FLOW 13 (7,8): burst=5.00, rate=4.00; nesting_level=2; uid=d
+FLOW 14 (9,10): burst=5.00, rate=4.00; nesting_level=2; uid=e
+FLOW 15 (11,12): burst=5.00, rate=4.00; nesting_level=2; uid=f
+FLOW 16 (13,14): burst=5.00, rate=4.00; nesting_level=2; uid=10
+FLOW 17 (15,16): burst=5.00, rate=4.00; nesting_level=2; uid=11
+------------------------------------------------------------
+
+
+This tandem is not nested, using "MTA" algorithm.
+Number of sets of cuts to try: 65
+Cuts set 000  ==>  LUDB= 54.6331 	 cuts_len= 11 	cuts={ 1 3 4 6 7 9 10 12 13 15 16 }
+Cuts set 001  ==>  LUDB= 49.8891 	 cuts_len= 10 	cuts={ 1 3 4 6 7 9 10 12 14 16 }
+Cuts set 002  ==>  LUDB= 50.0900 	 cuts_len= 10 	cuts={ 1 3 4 6 7 9 11 12 14 16 }
+Cuts set 003  ==>  LUDB= 50.2788 	 cuts_len= 10 	cuts={ 1 3 4 6 7 9 11 13 14 16 }
+Cuts set 004  ==>  LUDB= 50.4818 	 cuts_len= 10 	cuts={ 1 3 4 6 7 9 11 13 15 16 }
+Cuts set 005  ==>  LUDB= 50.3138 	 cuts_len= 10 	cuts={ 1 3 4 6 8 9 11 12 14 16 }
+Cuts set 006  ==>  LUDB= 50.5027 	 cuts_len= 10 	cuts={ 1 3 4 6 8 9 11 13 14 16 }
+Cuts set 007  ==>  LUDB= 50.7057 	 cuts_len= 10 	cuts={ 1 3 4 6 8 9 11 13 15 16 }
+Cuts set 008  ==>  LUDB= 50.7135 	 cuts_len= 10 	cuts={ 1 3 4 6 8 10 11 13 14 16 }
+Cuts set 009  ==>  LUDB= 50.9166 	 cuts_len= 10 	cuts={ 1 3 4 6 8 10 11 13 15 16 }
+Cuts set 010  ==>  LUDB= 51.1148 	 cuts_len= 10 	cuts={ 1 3 4 6 8 10 12 13 15 16 }
+Cuts set 011  ==>  LUDB= 46.5164 	 cuts_len= 9 	cuts={ 1 3 4 6 8 10 12 14 16 }
+Cuts set 012  ==>  LUDB= 50.5620 	 cuts_len= 10 	cuts={ 1 3 5 6 8 9 11 12 14 16 }
+Cuts set 013  ==>  LUDB= 50.7508 	 cuts_len= 10 	cuts={ 1 3 5 6 8 9 11 13 14 16 }
+Cuts set 014  ==>  LUDB= 50.9538 	 cuts_len= 10 	cuts={ 1 3 5 6 8 9 11 13 15 16 }
+Cuts set 015  ==>  LUDB= 50.9617 	 cuts_len= 10 	cuts={ 1 3 5 6 8 10 11 13 14 16 }
+Cuts set 016  ==>  LUDB= 51.1647 	 cuts_len= 10 	cuts={ 1 3 5 6 8 10 11 13 15 16 }
+Cuts set 017  ==>  LUDB= 51.3629 	 cuts_len= 10 	cuts={ 1 3 5 6 8 10 12 13 15 16 }
+Cuts set 018  ==>  LUDB= 46.7567 	 cuts_len= 9 	cuts={ 1 3 5 6 8 10 12 14 16 }
+Cuts set 019  ==>  LUDB= 51.1960 	 cuts_len= 10 	cuts={ 1 3 5 7 8 10 11 13 14 16 }
+Cuts set 020  ==>  LUDB= 51.3991 	 cuts_len= 10 	cuts={ 1 3 5 7 8 10 11 13 15 16 }
+Cuts set 021  ==>  LUDB= 51.5973 	 cuts_len= 10 	cuts={ 1 3 5 7 8 10 12 13 15 16 }
+Cuts set 022  ==>  LUDB= 46.9837 	 cuts_len= 9 	cuts={ 1 3 5 7 8 10 12 14 16 }
+Cuts set 023  ==>  LUDB= 51.8184 	 cuts_len= 10 	cuts={ 1 3 5 7 9 10 12 13 15 16 }
+Cuts set 024  ==>  LUDB= 47.1977 	 cuts_len= 9 	cuts={ 1 3 5 7 9 10 12 14 16 }
+Cuts set 025  ==>  LUDB= 47.3991 	 cuts_len= 9 	cuts={ 1 3 5 7 9 11 12 14 16 }
+Cuts set 026  ==>  LUDB= 47.5885 	 cuts_len= 9 	cuts={ 1 3 5 7 9 11 13 14 16 }
+Cuts set 027  ==>  LUDB= 47.7915 	 cuts_len= 9 	cuts={ 1 3 5 7 9 11 13 15 16 }
+Cuts set 028  ==>  LUDB= 50.9197 	 cuts_len= 10 	cuts={ 2 3 5 6 8 9 11 12 14 16 }
+Cuts set 029  ==>  LUDB= 51.1084 	 cuts_len= 10 	cuts={ 2 3 5 6 8 9 11 13 14 16 }
+Cuts set 030  ==>  LUDB= 51.3114 	 cuts_len= 10 	cuts={ 2 3 5 6 8 9 11 13 15 16 }
+Cuts set 031  ==>  LUDB= 51.3193 	 cuts_len= 10 	cuts={ 2 3 5 6 8 10 11 13 14 16 }
+Cuts set 032  ==>  LUDB= 51.5223 	 cuts_len= 10 	cuts={ 2 3 5 6 8 10 11 13 15 16 }
+Cuts set 033  ==>  LUDB= 51.7204 	 cuts_len= 10 	cuts={ 2 3 5 6 8 10 12 13 15 16 }
+Cuts set 034  ==>  LUDB= 47.1006 	 cuts_len= 9 	cuts={ 2 3 5 6 8 10 12 14 16 }
+Cuts set 035  ==>  LUDB= 51.5536 	 cuts_len= 10 	cuts={ 2 3 5 7 8 10 11 13 14 16 }
+Cuts set 036  ==>  LUDB= 51.7567 	 cuts_len= 10 	cuts={ 2 3 5 7 8 10 11 13 15 16 }
+Cuts set 037  ==>  LUDB= 51.9548 	 cuts_len= 10 	cuts={ 2 3 5 7 8 10 12 13 15 16 }
+Cuts set 038  ==>  LUDB= 47.3275 	 cuts_len= 9 	cuts={ 2 3 5 7 8 10 12 14 16 }
+Cuts set 039  ==>  LUDB= 52.1759 	 cuts_len= 10 	cuts={ 2 3 5 7 9 10 12 13 15 16 }
+Cuts set 040  ==>  LUDB= 47.5415 	 cuts_len= 9 	cuts={ 2 3 5 7 9 10 12 14 16 }
+Cuts set 041  ==>  LUDB= 47.7428 	 cuts_len= 9 	cuts={ 2 3 5 7 9 11 12 14 16 }
+Cuts set 042  ==>  LUDB= 47.9321 	 cuts_len= 9 	cuts={ 2 3 5 7 9 11 13 14 16 }
+Cuts set 043  ==>  LUDB= 48.1352 	 cuts_len= 9 	cuts={ 2 3 5 7 9 11 13 15 16 }
+Cuts set 044  ==>  LUDB= 51.8142 	 cuts_len= 10 	cuts={ 2 4 5 7 8 10 11 13 14 16 }
+Cuts set 045  ==>  LUDB= 52.0172 	 cuts_len= 10 	cuts={ 2 4 5 7 8 10 11 13 15 16 }
+Cuts set 046  ==>  LUDB= 52.2154 	 cuts_len= 10 	cuts={ 2 4 5 7 8 10 12 13 15 16 }
+Cuts set 047  ==>  LUDB= 47.5800 	 cuts_len= 9 	cuts={ 2 4 5 7 8 10 12 14 16 }
+Cuts set 048  ==>  LUDB= 52.4365 	 cuts_len= 10 	cuts={ 2 4 5 7 9 10 12 13 15 16 }
+Cuts set 049  ==>  LUDB= 47.7940 	 cuts_len= 9 	cuts={ 2 4 5 7 9 10 12 14 16 }
+Cuts set 050  ==>  LUDB= 47.9953 	 cuts_len= 9 	cuts={ 2 4 5 7 9 11 12 14 16 }
+Cuts set 051  ==>  LUDB= 48.1845 	 cuts_len= 9 	cuts={ 2 4 5 7 9 11 13 14 16 }
+Cuts set 052  ==>  LUDB= 48.3876 	 cuts_len= 9 	cuts={ 2 4 5 7 9 11 13 15 16 }
+Cuts set 053  ==>  LUDB= 52.6816 	 cuts_len= 10 	cuts={ 2 4 6 7 9 10 12 13 15 16 }
+Cuts set 054  ==>  LUDB= 48.0314 	 cuts_len= 9 	cuts={ 2 4 6 7 9 10 12 14 16 }
+Cuts set 055  ==>  LUDB= 48.2327 	 cuts_len= 9 	cuts={ 2 4 6 7 9 11 12 14 16 }
+Cuts set 056  ==>  LUDB= 48.4220 	 cuts_len= 9 	cuts={ 2 4 6 7 9 11 13 14 16 }
+Cuts set 057  ==>  LUDB= 48.6251 	 cuts_len= 9 	cuts={ 2 4 6 7 9 11 13 15 16 }
+Cuts set 058  ==>  LUDB= 48.4569 	 cuts_len= 9 	cuts={ 2 4 6 8 9 11 12 14 16 }
+Cuts set 059  ==>  LUDB= 48.6462 	 cuts_len= 9 	cuts={ 2 4 6 8 9 11 13 14 16 }
+Cuts set 060  ==>  LUDB= 48.8493 	 cuts_len= 9 	cuts={ 2 4 6 8 9 11 13 15 16 }
+Cuts set 061  ==>  LUDB= 48.8575 	 cuts_len= 9 	cuts={ 2 4 6 8 10 11 13 14 16 }
+Cuts set 062  ==>  LUDB= 49.0607 	 cuts_len= 9 	cuts={ 2 4 6 8 10 11 13 15 16 }
+Cuts set 063  ==>  LUDB= 49.2593 	 cuts_len= 9 	cuts={ 2 4 6 8 10 12 13 15 16 }
+Cuts set 064  ==>  LUDB= 44.7518 	 cuts_len= 8 	cuts={ 2 4 6 8 10 12 14 16 }
+Sub-tandem computations reusage ratio = 0.6119  (380 / 621)
+Best set(s) of cuts:  { 064 }
+
+DEBORAH results:
+-------------------------
+      LUDB = 44.751805
+

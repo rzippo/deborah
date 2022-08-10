@@ -1,0 +1,116 @@
+Parsing scenario configuration file... ok.
+------------------------------------------------------------
+Tandem: 16 nodes, 18 flows, nesting_level=3
+        Tagged flow = (1,16)  flow_id=#0
+        Tandem is not nested.
+NODE 01: latency=1.00, rate=24.00
+NODE 02: latency=1.00, rate=24.00
+NODE 03: latency=1.00, rate=24.00
+NODE 04: latency=1.00, rate=24.00
+NODE 05: latency=1.00, rate=24.00
+NODE 06: latency=1.00, rate=24.00
+NODE 07: latency=1.00, rate=24.00
+NODE 08: latency=1.00, rate=24.00
+NODE 09: latency=1.00, rate=24.00
+NODE 10: latency=1.00, rate=24.00
+NODE 11: latency=1.00, rate=24.00
+NODE 12: latency=1.00, rate=24.00
+NODE 13: latency=1.00, rate=24.00
+NODE 14: latency=1.00, rate=24.00
+NODE 15: latency=1.00, rate=24.00
+NODE 16: latency=1.00, rate=24.00
+FLOW 00 (1,16): burst=5.00, rate=4.00; nesting_level=1; uid=0
+FLOW 01 (1,1): burst=5.00, rate=4.00; nesting_level=3; uid=1
+FLOW 02 (2,3): burst=5.00, rate=4.00; nesting_level=2; uid=2
+FLOW 03 (4,5): burst=5.00, rate=4.00; nesting_level=2; uid=3
+FLOW 04 (6,7): burst=5.00, rate=4.00; nesting_level=2; uid=4
+FLOW 05 (8,9): burst=5.00, rate=4.00; nesting_level=2; uid=5
+FLOW 06 (10,11): burst=5.00, rate=4.00; nesting_level=2; uid=6
+FLOW 07 (12,13): burst=5.00, rate=4.00; nesting_level=2; uid=7
+FLOW 08 (14,15): burst=5.00, rate=4.00; nesting_level=2; uid=8
+FLOW 09 (16,16): burst=5.00, rate=4.00; nesting_level=3; uid=9
+FLOW 10 (1,2): burst=5.00, rate=4.00; nesting_level=2; uid=a
+FLOW 11 (3,4): burst=5.00, rate=4.00; nesting_level=2; uid=b
+FLOW 12 (5,6): burst=5.00, rate=4.00; nesting_level=2; uid=c
+FLOW 13 (7,8): burst=5.00, rate=4.00; nesting_level=2; uid=d
+FLOW 14 (9,10): burst=5.00, rate=4.00; nesting_level=2; uid=e
+FLOW 15 (11,12): burst=5.00, rate=4.00; nesting_level=2; uid=f
+FLOW 16 (13,14): burst=5.00, rate=4.00; nesting_level=2; uid=10
+FLOW 17 (15,16): burst=5.00, rate=4.00; nesting_level=2; uid=11
+------------------------------------------------------------
+
+Running STA algorithm for output arrival curve computation
+Number of sets of cuts to try: 65
+Cuts set 000  ==>  LUDB= 28.6723 	 cuts_len= 11 	cuts={ 1 3 4 6 7 9 10 12 13 15 16 }
+Cuts set 001  ==>  LUDB= 27.4896 	 cuts_len= 10 	cuts={ 1 3 4 6 7 9 10 12 14 16 }
+Cuts set 002  ==>  LUDB= 27.5314 	 cuts_len= 10 	cuts={ 1 3 4 6 7 9 11 12 14 16 }
+Cuts set 003  ==>  LUDB= 27.5725 	 cuts_len= 10 	cuts={ 1 3 4 6 7 9 11 13 14 16 }
+Cuts set 004  ==>  LUDB= 27.6455 	 cuts_len= 10 	cuts={ 1 3 4 6 7 9 11 13 15 16 }
+Cuts set 005  ==>  LUDB= 27.5759 	 cuts_len= 10 	cuts={ 1 3 4 6 8 9 11 12 14 16 }
+Cuts set 006  ==>  LUDB= 27.6170 	 cuts_len= 10 	cuts={ 1 3 4 6 8 9 11 13 14 16 }
+Cuts set 007  ==>  LUDB= 27.6901 	 cuts_len= 10 	cuts={ 1 3 4 6 8 9 11 13 15 16 }
+Cuts set 008  ==>  LUDB= 27.6600 	 cuts_len= 10 	cuts={ 1 3 4 6 8 10 11 13 14 16 }
+Cuts set 009  ==>  LUDB= 27.7333 	 cuts_len= 10 	cuts={ 1 3 4 6 8 10 11 13 15 16 }
+Cuts set 010  ==>  LUDB= 27.7750 	 cuts_len= 10 	cuts={ 1 3 4 6 8 10 12 13 15 16 }
+Cuts set 011  ==>  LUDB= 26.6202 	 cuts_len= 9 	cuts={ 1 3 4 6 8 10 12 14 16 }
+Cuts set 012  ==>  LUDB= 27.6234 	 cuts_len= 10 	cuts={ 1 3 5 6 8 9 11 12 14 16 }
+Cuts set 013  ==>  LUDB= 27.6646 	 cuts_len= 10 	cuts={ 1 3 5 6 8 9 11 13 14 16 }
+Cuts set 014  ==>  LUDB= 27.7377 	 cuts_len= 10 	cuts={ 1 3 5 6 8 9 11 13 15 16 }
+Cuts set 015  ==>  LUDB= 27.7076 	 cuts_len= 10 	cuts={ 1 3 5 6 8 10 11 13 14 16 }
+Cuts set 016  ==>  LUDB= 27.7809 	 cuts_len= 10 	cuts={ 1 3 5 6 8 10 11 13 15 16 }
+Cuts set 017  ==>  LUDB= 27.8226 	 cuts_len= 10 	cuts={ 1 3 5 6 8 10 12 13 15 16 }
+Cuts set 018  ==>  LUDB= 26.6663 	 cuts_len= 9 	cuts={ 1 3 5 6 8 10 12 14 16 }
+Cuts set 019  ==>  LUDB= 27.7535 	 cuts_len= 10 	cuts={ 1 3 5 7 8 10 11 13 14 16 }
+Cuts set 020  ==>  LUDB= 27.8268 	 cuts_len= 10 	cuts={ 1 3 5 7 8 10 11 13 15 16 }
+Cuts set 021  ==>  LUDB= 27.8686 	 cuts_len= 10 	cuts={ 1 3 5 7 8 10 12 13 15 16 }
+Cuts set 022  ==>  LUDB= 26.7109 	 cuts_len= 9 	cuts={ 1 3 5 7 8 10 12 14 16 }
+Cuts set 023  ==>  LUDB= 27.9131 	 cuts_len= 10 	cuts={ 1 3 5 7 9 10 12 13 15 16 }
+Cuts set 024  ==>  LUDB= 26.7540 	 cuts_len= 9 	cuts={ 1 3 5 7 9 10 12 14 16 }
+Cuts set 025  ==>  LUDB= 26.7957 	 cuts_len= 9 	cuts={ 1 3 5 7 9 11 12 14 16 }
+Cuts set 026  ==>  LUDB= 26.8368 	 cuts_len= 9 	cuts={ 1 3 5 7 9 11 13 14 16 }
+Cuts set 027  ==>  LUDB= 26.9092 	 cuts_len= 9 	cuts={ 1 3 5 7 9 11 13 15 16 }
+Cuts set 028  ==>  LUDB= 27.7076 	 cuts_len= 10 	cuts={ 2 3 5 6 8 9 11 12 14 16 }
+Cuts set 029  ==>  LUDB= 27.7487 	 cuts_len= 10 	cuts={ 2 3 5 6 8 9 11 13 14 16 }
+Cuts set 030  ==>  LUDB= 27.8220 	 cuts_len= 10 	cuts={ 2 3 5 6 8 9 11 13 15 16 }
+Cuts set 031  ==>  LUDB= 27.7918 	 cuts_len= 10 	cuts={ 2 3 5 6 8 10 11 13 14 16 }
+Cuts set 032  ==>  LUDB= 27.8651 	 cuts_len= 10 	cuts={ 2 3 5 6 8 10 11 13 15 16 }
+Cuts set 033  ==>  LUDB= 27.9069 	 cuts_len= 10 	cuts={ 2 3 5 6 8 10 12 13 15 16 }
+Cuts set 034  ==>  LUDB= 26.7479 	 cuts_len= 9 	cuts={ 2 3 5 6 8 10 12 14 16 }
+Cuts set 035  ==>  LUDB= 27.8377 	 cuts_len= 10 	cuts={ 2 3 5 7 8 10 11 13 14 16 }
+Cuts set 036  ==>  LUDB= 27.9111 	 cuts_len= 10 	cuts={ 2 3 5 7 8 10 11 13 15 16 }
+Cuts set 037  ==>  LUDB= 27.9529 	 cuts_len= 10 	cuts={ 2 3 5 7 8 10 12 13 15 16 }
+Cuts set 038  ==>  LUDB= 26.7925 	 cuts_len= 9 	cuts={ 2 3 5 7 8 10 12 14 16 }
+Cuts set 039  ==>  LUDB= 27.9974 	 cuts_len= 10 	cuts={ 2 3 5 7 9 10 12 13 15 16 }
+Cuts set 040  ==>  LUDB= 26.8357 	 cuts_len= 9 	cuts={ 2 3 5 7 9 10 12 14 16 }
+Cuts set 041  ==>  LUDB= 26.8774 	 cuts_len= 9 	cuts={ 2 3 5 7 9 11 12 14 16 }
+Cuts set 042  ==>  LUDB= 26.9185 	 cuts_len= 9 	cuts={ 2 3 5 7 9 11 13 14 16 }
+Cuts set 043  ==>  LUDB= 26.9910 	 cuts_len= 9 	cuts={ 2 3 5 7 9 11 13 15 16 }
+Cuts set 044  ==>  LUDB= 27.8874 	 cuts_len= 10 	cuts={ 2 4 5 7 8 10 11 13 14 16 }
+Cuts set 045  ==>  LUDB= 27.9608 	 cuts_len= 10 	cuts={ 2 4 5 7 8 10 11 13 15 16 }
+Cuts set 046  ==>  LUDB= 28.0026 	 cuts_len= 10 	cuts={ 2 4 5 7 8 10 12 13 15 16 }
+Cuts set 047  ==>  LUDB= 26.8407 	 cuts_len= 9 	cuts={ 2 4 5 7 8 10 12 14 16 }
+Cuts set 048  ==>  LUDB= 28.0471 	 cuts_len= 10 	cuts={ 2 4 5 7 9 10 12 13 15 16 }
+Cuts set 049  ==>  LUDB= 26.8839 	 cuts_len= 9 	cuts={ 2 4 5 7 9 10 12 14 16 }
+Cuts set 050  ==>  LUDB= 26.9256 	 cuts_len= 9 	cuts={ 2 4 5 7 9 11 12 14 16 }
+Cuts set 051  ==>  LUDB= 26.9667 	 cuts_len= 9 	cuts={ 2 4 5 7 9 11 13 14 16 }
+Cuts set 052  ==>  LUDB= 27.0392 	 cuts_len= 9 	cuts={ 2 4 5 7 9 11 13 15 16 }
+Cuts set 053  ==>  LUDB= 28.0946 	 cuts_len= 10 	cuts={ 2 4 6 7 9 10 12 13 15 16 }
+Cuts set 054  ==>  LUDB= 26.9298 	 cuts_len= 9 	cuts={ 2 4 6 7 9 10 12 14 16 }
+Cuts set 055  ==>  LUDB= 26.9716 	 cuts_len= 9 	cuts={ 2 4 6 7 9 11 12 14 16 }
+Cuts set 056  ==>  LUDB= 27.0127 	 cuts_len= 9 	cuts={ 2 4 6 7 9 11 13 14 16 }
+Cuts set 057  ==>  LUDB= 27.0853 	 cuts_len= 9 	cuts={ 2 4 6 7 9 11 13 15 16 }
+Cuts set 058  ==>  LUDB= 27.0161 	 cuts_len= 9 	cuts={ 2 4 6 8 9 11 12 14 16 }
+Cuts set 059  ==>  LUDB= 27.0572 	 cuts_len= 9 	cuts={ 2 4 6 8 9 11 13 14 16 }
+Cuts set 060  ==>  LUDB= 27.1298 	 cuts_len= 9 	cuts={ 2 4 6 8 9 11 13 15 16 }
+Cuts set 061  ==>  LUDB= 27.1002 	 cuts_len= 9 	cuts={ 2 4 6 8 10 11 13 14 16 }
+Cuts set 062  ==>  LUDB= 27.1730 	 cuts_len= 9 	cuts={ 2 4 6 8 10 11 13 15 16 }
+Cuts set 063  ==>  LUDB= 27.2147 	 cuts_len= 9 	cuts={ 2 4 6 8 10 12 13 15 16 }
+Cuts set 064  ==>  LUDB= 26.0774 	 cuts_len= 8 	cuts={ 2 4 6 8 10 12 14 16 }
+Sub-tandem computations reusage ratio = 0.6119  (380 / 621)
+Best set(s) of cuts:  { 064 }
+Output arrival curve parameters: 
+[
+	{ "burst" : 108.059403 , "rate" : 4.000000 }
+]
+
+

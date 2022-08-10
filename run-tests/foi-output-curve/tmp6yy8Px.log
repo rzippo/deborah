@@ -1,0 +1,33 @@
+Parsing scenario configuration file... ok.
+------------------------------------------------------------
+Tandem: 4 nodes, 2 flows, nesting_level=2
+        Tagged flow = (1,4)  flow_id=#0
+        Tandem is nested.
+NODE 01: latency=30.00, rate=0.21
+NODE 02: latency=31.00, rate=0.21
+NODE 03: latency=30.00, rate=0.42
+NODE 04: latency=31.00, rate=0.42
+FLOW 00 (1,4): burst=30.00, rate=0.14; nesting_level=1; uid=0
+FLOW 01 (3,3): burst=63.57, rate=0.14; nesting_level=2; uid=1
+------------------------------------------------------------
+
+Associated nesting tree:
+----------------------------------------------------
+TNode: flow (1,4)   flow_id=#00
+       leaf nodes: 01 02 04
+       child flows: (3,3)
+       PI_C: latency=92.00 rate=0.21
+       Indexes: [ [ 2 ] [ 1 ] ] --> combinations = 2
+TNode: flow (3,3)   flow_id=#01
+       leaf nodes: 03
+       child flows: none
+       PI_C: latency=30.00 rate=0.42
+       Indexes: [ [ 1 ] ] --> combinations = 1
+----------------------------------------------------
+
+Output arrival curve parameters: 
+[
+	{ "burst" : 69.224000 , "rate" : 0.142857 }
+]
+
+
