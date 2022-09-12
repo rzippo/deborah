@@ -1,7 +1,7 @@
 #include "linearsegment.h"
 #include <iostream>
 #include <iomanip>
-#include <math.h>
+#include <cmath>
 #include <stdio.h>
 
 namespace deborah
