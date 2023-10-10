@@ -16,4 +16,6 @@ cmake ..
 make
 ```
 
+On Windows, in the last step run `cmake --build .` instead of `make`.
+
 Alternatively, most IDEs will allow you to open the project via the `CMakeLists.txt` and take care of the build process themselves.
