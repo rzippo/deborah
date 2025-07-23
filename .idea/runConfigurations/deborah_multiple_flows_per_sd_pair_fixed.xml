@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="deborah multiple-flows-per-sd-pair fixed" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="scenarios\edge-cases\one-flow-per-sd-pair-fixed.conf --ludb --lb" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://../" PASS_PARENT_ENVS_2="true" PROJECT_NAME="deborah" TARGET_NAME="deborah" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="deborah" RUN_TARGET_NAME="deborah">
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

@@ -17,6 +17,15 @@ The features are mostly unchanged, including the tool interface.
 
 Among the additions, the program can now output the output arrival curve related to the LUDB scenario, which is useful to integrate `deborah` into FIFO network studies.
 
+## How to use
+
+> TODO
+
+### Edge-cases
+
+`deborah` makes a few assumptions on the input, which may lead to incorrect results when they are not verified.
+See [here](/scenarios/edge-cases/) for more details and examples.
+
 ## Reminder on CMake
 
 On usual configurations, to build compile this program you would need to use the following commands
