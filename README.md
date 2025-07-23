@@ -2,15 +2,15 @@
 
 ```
 @InProceedings{10.1007/978-3-642-16558-0_15,
-author="Bisti, Luca and Lenzini, Luciano and Mingozzi, Enzo and Stea, Giovanni",
-title="DEBORAH: A Tool for Worst-Case Analysis of FIFO Tandems",
-booktitle="Leveraging Applications of Formal Methods, Verification, and Validation",
-year="2010",
-doi={https://doi.org/10.1007/978-3-642-16558-0_15}
+    author="Bisti, Luca and Lenzini, Luciano and Mingozzi, Enzo and Stea, Giovanni",
+    title="DEBORAH: A Tool for Worst-Case Analysis of FIFO Tandems",
+    booktitle="Leveraging Applications of Formal Methods, Verification, and Validation",
+    year="2010",
+    doi={https://doi.org/10.1007/978-3-642-16558-0_15}
 }
 ```
 
-This is a fork of the original code base to make it compilable with modern tools.
+This is a fork of the [original code base](https://1drv.ms/u/c/24bb005675f8a486/EYak-HVWALsggCTlJAwAAAABvEA9ScWAKheGEscG7tMlKg?e=qfBVm2) to make it compilable with modern tools.
 The build system is now CMake, and the code is compliant to the C++20 standard.
 
 The features are mostly unchanged, including the tool interface.
