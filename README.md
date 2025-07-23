@@ -1,9 +1,21 @@
-# Deborah
+# DEBORAH: A Tool for Worst-Case Analysis of FIFO Tandems
 
-This fork includes many changes to the original code base, but the features are mostly unchanged.
+```
+@InProceedings{10.1007/978-3-642-16558-0_15,
+author="Bisti, Luca and Lenzini, Luciano and Mingozzi, Enzo and Stea, Giovanni",
+title="DEBORAH: A Tool for Worst-Case Analysis of FIFO Tandems",
+booktitle="Leveraging Applications of Formal Methods, Verification, and Validation",
+year="2010",
+doi={https://doi.org/10.1007/978-3-642-16558-0_15}
+}
+```
+
+This is a fork of the original code base to make it compilable with modern tools.
 The build system is now CMake, and the code is compliant to the C++20 standard.
 
-Among the additions, the program can now output the output arrival curve related to the LUDB scenario, which is useful to integrate deborah into FIFO network studies.
+The features are mostly unchanged, including the tool interface.
+
+Among the additions, the program can now output the output arrival curve related to the LUDB scenario, which is useful to integrate `deborah` into FIFO network studies.
 
 ## Reminder on CMake
 
