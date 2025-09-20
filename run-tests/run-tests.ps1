@@ -1,3 +1,5 @@
+#!/bin/pwsh
+
 param(
     [switch]$continueOnFail = $false,
     [switch]$verbose = $false,
@@ -29,18 +31,30 @@ function AreFilesEqual($a, $b)
 
 $stopwatch = [System.Diagnostics.Stopwatch]::StartNew();
 
+$nTests = 0;
+$nTestsSuccess = 0;
+$nTestsSkipped = 0;
+$nTestsFailed = 0;
+
 foreach($command in $commands)
 {
     foreach($scenario in $scenarios)
     {
+        $nTests++;
         Write-Output "Testing $command on $($scenario.Name)";
+
+        $refFile = "$command/$($scenario.BaseName).log";
+        if(-not(Test-Path -Path $refFile -PathType Leaf)) {
+            Write-Output "TEST SKIPPED: ref file does not exist";
+            $nTestsSkipped++;
+            continue;
+        }
 
         $tmpFile = New-TemporaryFile;
         if($verbose)
         {
             Write-Output "Run output: $tmpFile";
         }
-        $refFile = "$command/$($scenario.BaseName).log";
 
         $expression = "$deborah $scenario --det-output --$command > $tmpFile";
         if($verbose)
@@ -52,6 +66,7 @@ foreach($command in $commands)
         $passed = AreFilesEqual $tmpFile $refFile;
         if(-Not $passed)
         {
+            $nTestsFailed++;
             Write-Output "TEST FAILED";
             Write-Output "Reference is left, test output is right";
             Compare-Object -ReferenceObject (Get-Content $refFile) -DifferenceObject (Get-Content $tmpFile)
@@ -62,6 +77,7 @@ foreach($command in $commands)
             }
         }
         else {
+            $nTestsSuccess++;
             Write-Output "TEST PASSED"
         }
     }    
@@ -69,3 +85,4 @@ foreach($command in $commands)
 
 $stopwatch.Stop();
 Write-Output "Running time: $($stopwatch.Elapsed)";
+Write-Output "$nTests tests: $nTestsSuccess passed, $nTestsSkipped skipped, $nTestsFailed failed";
