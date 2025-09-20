@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="deborah cuts-fig12 lb" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="./scenarios/cuts-paper-fig12.conf --det-output --lb" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="deborah" TARGET_NAME="deborah" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="deborah" RUN_TARGET_NAME="deborah">
+  <configuration default="false" name="deborah cuts-fig12 lb" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="./scenarios/cuts-paper-fig12.conf --det-output --lb" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="deborah" TARGET_NAME="deborah" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="deborah" RUN_TARGET_NAME="deborah">
     <envs>
       <env name="LUDB_NON_NESTED_DEBUG" value="2" />
     </envs>
